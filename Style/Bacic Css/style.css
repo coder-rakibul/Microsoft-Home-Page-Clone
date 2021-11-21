@@ -318,6 +318,10 @@ Links
     line-height: 2.8;
 }
 
+.link-inner li a:hover {
+    border-bottom: 1px solid #262626;
+}
+
 /* ============================
 Footer Section
 =============================== */
