@@ -1,0 +1,359 @@
+/* ==========================
+Comon CSS
+============================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a {
+    color: #262626;
+    text-decoration: none;
+}
+
+img {
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+.contenet {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.right {
+    float: right;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.white h2 {
+    color: #ffffff;
+}
+
+.white p {
+    color: #ffffff;
+}
+
+.white a.btn {
+    color: #262626 !important;
+    background: #ffffff !important;
+}
+
+.white .btn {
+    color: #ffffff !important;
+    background: #262626 !important;
+}
+
+.laft {
+    float: left;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+
+.main-nav .logo {
+    width: 110px;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    padding: 0 10px;
+}
+
+.main-nav ul li a {
+    padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #262626;
+}
+
+
+.main-nav ul.laft-manu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/*=======================
+ Banar Hader Section 
+========================= */
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;
+}
+
+.manu-icone {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.sowcach {
+    width: 100%;
+    height: 400px;
+    background: url(../../Images/Banar/banar2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+.sowcach h1,
+.sowcach p {
+    margin-bottom: 10px;
+}
+
+.sowcach .btn {
+    margin-top: 20px;
+}
+
+/* ============================
+Hero Carrd Aria
+=================================*/
+
+.hero-card-aria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 40px;
+}
+
+.hero-card-aria img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.hero-card-aria h3 {
+    margin-bottom: 5px;
+}
+
+.hero-card-aria a {
+    display: inline-block;
+    padding-top: 10px;
+    color: #0067b8;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hero-card-aria a i {
+    padding-left: 3px;
+}
+
+.hero-card-aria a:hover i {
+    padding-left: 10px;
+    transition: all .3s ease-in-out;
+}
+
+/* ===========================
+Xbox
+============================== */
+
+.xbox {
+    height: 350px;
+    width: 100%;
+    background: url('../../Images/Banar/banar3.png') no-repeat center center/cover;
+    margin-bottom: 20px;
+}
+
+.xbox img {
+    object-fit: cover;
+}
+
+.xbox .content {
+    width: 40%;
+    padding: 50px 0 0 30px;
+}
+
+.xbox p {
+    margin: 10px 0 20px;
+}
+
+/* ===========================
+Carbon Aria
+============================== */
+
+.carbon-aria {
+    width: 100%;
+    height: 350px;
+    background: url(../../Images/Banar/banaer1.jpg) no-repeat center center/cover;
+}
+
+.carbon-aria img {
+    object-fit: cover;
+}
+
+.carbon-aria .content {
+    width: 55%;
+    padding: 100px 0 0 30px;
+
+}
+
+.white p {
+    line-height: 1.6;
+    padding: 13px 0;
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 15px 0 14px;
+    font-size: 17px;
+}
+
+.follow * {
+    margin: 10px;
+}
+
+.follow a i {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all .4s ease-in-out;
+}
+
+
+.follow a:hover .fa-facebook-f {
+    background-color: #3b5998;
+    color: #fff !important;
+    border: 1px solid #262626;
+}
+
+.follow a:hover .fa-twitter {
+    background-color: #1da1f2;
+    color: #fff !important;
+    border: 1px solid #262626;
+}
+
+.follow a:hover .fa-linkedin-in {
+    background-color: #0e76a8;
+    color: #fff !important;
+    border: 1px solid #262626;
+}
+
+/* ====================================
+Links
+======================================= */
+
+.links {
+    background: #f2f2f2;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.link-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.link-inner li {
+    line-height: 2.8;
+}
+
+/* ============================
+Footer Section
+=============================== */
+
+.footer {
+    background: #ffffff;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+}
+
+.footer div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer div i {
+    margin-right: 10px;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 020px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer li {
+    margin-right: 30px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,123 @@
+/* ++++++++++++++++++++++++++++++++++++++
+            MOBILE RESPONCEVE
++++++++++++++++++++++++++++++++++++++++++ */
+
+@media(max-width: 768px) {
+    .manu-icone {
+        display: block;
+    }
+
+    .manu-icone:hover {
+        opacity: 0.5;
+    }
+
+    .main-nav ul.right-manu {
+        margin: 50px;
+    }
+
+    .main-nav ul.laft-manu {
+        display: block;
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: all .5s ease-in-out;
+        position: fixed;
+
+    }
+
+    .main-nav ul.laft-manu li {
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+
+    .main-nav ul.laft-manu li:last-child {
+        border-bottom: 0;
+    }
+
+    /* Show */
+    .main-nav ul.laft-manu.show {
+        transform: translateX(-20px);
+    }
+
+    /* End Show Code */
+
+    .hero-card-aria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .xbox .content {
+        width: 54%;
+    }
+
+    .follow {
+        justify-content: center;
+    }
+
+    .xbox .content p {
+        display: none;
+    }
+
+    .xbox .content h2 {
+        margin-bottom: 20px;
+    }
+
+    .carbon-aria .content {
+        width: 85%;
+    }
+
+    .links .link-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Footer+++++++++ */
+    .follow * {
+        margin: 3px;
+    }
+
+    .footer ul {
+        display: block;
+        position: relative;
+    }
+
+    .footer div i {
+        font-size: 16px;
+    }
+
+    .footer div {
+        display: block;
+    }
+
+
+}
+
+
+@media(max-width: 500px) {
+    .hero-card-aria {
+        grid-template-columns: 1fr;
+    }
+
+    .links .link-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .links .link-inner ul {
+        margin-bottom: 20px;
+    }
+
+    .white p {
+        margin-top: -11px;
+    }
+
+    .white a.btn {
+        margin-top: -20px;
+    }
+}
